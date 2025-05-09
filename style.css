@@ -25,6 +25,10 @@ body{
     }
 }
 
+.list:hover .item:not(hover){
+    filter: grayscale(1) blur(10px);
+}
+
 article{
     position: relative;
     width: 250px;
