@@ -25,6 +25,11 @@ body{
     }
 }
 
+article{
+    position: relative;
+    width: 250px;
+    transition: all .3s ease;
+}
 
 article img:first-child{
     box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
