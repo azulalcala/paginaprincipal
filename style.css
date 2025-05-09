@@ -25,22 +25,22 @@ body{
     }
 }
 
-article{
+article .list{
     position: relative;
     width: 250px;
     transition: all .3s ease;
 }
 
-article img:first-child{
+.list .img{
     box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
     border-radius: 4px;
     object-fit: cover;
     width: 100%;
 }
 
-article img:last-child{
+article img{
     position: absolute;
-    width: 300px;
+    width: 200px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -53,12 +53,12 @@ article img:last-child{
 article:hover{
     transform: 
         perspective(250px)
-        rotateX(10deg)
-        translateY(-10%)
+        rotateX(15deg)
+        translateY(-5%)
         translateZ(0);
 }
 
-article::before{
+.list::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -74,7 +74,7 @@ article::before{
     transition: all .3s ease;
 }
 
-article:hover::before{
+.list:hover::before{
     opacity: 1;
 }
 
