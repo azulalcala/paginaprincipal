@@ -20,7 +20,7 @@ body{
     position: absolute;
     width:100%;
     height: 100%;
-    background-image: url(img9.jpg);
+    background-image: url(img1.jpg);
     background-size: cover;
     background-position: center;
     transform: translateZ(-10px) scale(1.);
@@ -30,29 +30,13 @@ body{
     font-size: xxx-large;
     transform: translateZ(10px);
 }
-
 .static{
-    background-image: linear-gradient(135deg
-    ,#060a50, #07256b, #093e79, #10689a,
-     #3890db, #3da1f6, #74c6f1);
-     background-size: 500%;
-     animation: fanimado 10s infinite;
-}
-
-
-@keyframes fanimado{
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
-}
-   
-
+    height:100vh;
+    background-image: linear-gradient(
+        to bottom,
+        transparent,
+        #1B2735 50px
+    );
     transform: translateY(-50px);
     display: flex;
     justify-content: center;
