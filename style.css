@@ -25,6 +25,18 @@ body{
     }
 }
 
+.content{
+    padding: 0;
+    background: #032b46;
+    width: 90%
+    max-width: 1000px;
+    margin: auto;
+}
+.content h1{
+    color: white;
+}
+
+
 .list:hover .item:not(:hover){
     filter: grayscale(1) blur(10px);
 }
